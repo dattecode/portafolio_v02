@@ -1,0 +1,270 @@
+:root {
+  --bg01: #004840;
+  --bg02: #5DA399;
+  --color01: #8f001a;
+  --gray: #c4c4c4;
+  --gray-opa: #c4c4c470;
+}
+
+.contentTotal{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.circleNum{
+  position: absolute;
+  top: 13%;
+  right: -30%;
+}
+
+.circleNum2{
+  position: absolute;
+  bottom: 10%;
+  left: -30%;
+}
+
+/* navbar */
+
+.coverNav{
+  height: 1rem;
+  width: 100%;
+}
+
+.navbar {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg01);
+  position: fixed;
+  z-index: 10;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.selectNav {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  color: var(--color01);
+  border: solid 2px var(--color01);
+  background-color: var(--bg02);
+}
+
+.navClick{
+  cursor: pointer;
+}
+
+/*  main  */
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* description */
+.descripcion {
+  display: flex;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  gap: 2rem;
+  z-index: 5;
+}
+
+.presentacionContainer {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.homeCont {
+  width: 100%;
+}
+
+.titleDes{
+  color: var(--bg01);
+  font-weight: 900;
+  
+}
+
+.pDes{
+  font-weight: 600;
+}
+
+.iconHome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--color01);
+  background-color: var(--gray);
+  width: 9rem;
+  padding: 0.3rem;
+  border-radius: 3rem;
+}
+
+.aCont{
+  color: inherit;
+  text-decoration: none;
+}
+
+.contentImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.imgDes {
+  border-radius: 0.5rem;
+  border: 2px solid black;
+  box-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.subImgBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  height: 2rem;
+  margin-top: 1.5rem;
+}
+
+.iconMail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--bg02);
+  padding: 0.3rem;
+  border-radius: 3rem;
+  color: var(--color01);
+  cursor: pointer;
+}
+
+.iconGit {
+  color: var(--color01);
+  cursor: pointer;
+  border: 2px solid var(--bg02);
+  background-color: var(--bg02);
+  padding: 0.3rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.barDeco {
+  width: 10rem;
+  height: 0.3rem;
+  background-color: var(--gray);
+  border-radius: 1rem;
+}
+
+.contText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+/* proyects */
+
+.proyectsCont{
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  z-index: 5;
+}
+
+.iconProyectCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.iconProyect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray);
+  color: var(--color01);
+  border-radius: 3rem;
+  padding: 0.5rem;
+  width: 8rem;
+  gap: 0.3rem;
+}
+
+.barGrayPro {
+  width: 30%;
+  height: 0.2rem;
+  border-radius: 1rem;
+  background-color: var(--gray);
+}
+
+/*   Skills   */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  z-index: 5;
+}
+
+.skillsContent{
+  border: 2px solid var(--bg01);
+  border-radius: 0.5rem;
+  width: 70%;
+}
+
+.contentButtonSkills{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+.contentButtonSkills > button {
+  cursor: pointer;
+  padding: 0.3rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--bg02);
+  color: var(--color01);
+}
+
+.skillsText {
+  background-color: var(--gray-opa);
+  border: 2px solid var(--bg02);
+  border-radius: 0.5rem;
+  margin: 2rem;
+  text-align: center;
+  padding: 0.3rem;
+}
+
+/* query */
+
+@media (max-width: 768px){
+  .presentacionContainer{
+    flex-direction: column;
+  }
+}

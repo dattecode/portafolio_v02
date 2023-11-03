@@ -1,0 +1,33 @@
+
+.proyectsSc{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  
+}
+
+.imgPro{
+  width: 10rem;
+  border-right: 2px solid #40867d;
+}
+
+.proyectContainer{
+  text-decoration: none;
+  color: inherit;
+  background-color: #FF6B6B90;
+  border: 2px solid #40867d;
+  width: 70%;
+  display: flex;
+  gap: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.proyectDesCont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.4rem;
+}

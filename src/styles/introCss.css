@@ -1,0 +1,67 @@
+.containerIntro {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.containerText {
+  z-index: 10;
+  width: 80%;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-repeat: no-repeat;
+}
+
+.presentacion {
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 2rem;
+  border-radius: 0.5rem;
+}
+
+.introTitle{
+  color: #009900;
+  text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.9);
+}
+
+.par {
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 0.1rem;
+  text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.9);
+}
+
+.homeBtn{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  background-color: #7FFF00;
+  color: #8d0000;
+  width: 5.5rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3rem;
+  transition: scale 0.3s;
+}
+
+.circleS{
+  width: 35rem;
+  position: absolute;
+}
+
+.homeBtn:hover{
+  scale: 1.2;
+}
