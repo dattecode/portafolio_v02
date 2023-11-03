@@ -53,8 +53,8 @@ const Proyects = ({ animates }) => {
         >
           <img src={proyect.image} className="imgPro" />
           <div className="proyectDesCont">
-            <h2>{proyect.name}</h2>
-            <p>{proyect.description}</p>
+            <h2 className="tPro">{proyect.name}</h2>
+            <p className="pPro">{proyect.description}</p>
           </div>
         </motion.a>
       ))}
