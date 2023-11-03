@@ -158,17 +158,18 @@ const Home = () => {
                 >
                   <IconBrandGithub />
                 </motion.a>
-                <motion.div
+                <motion.a
                   className="iconMail"
                   variants={animateBtnSkill}
                   whileHover="hover"
                   whileTap="tap"
+                  href="mailto:dattecode@gmail.com"
                 >
-                  <IconMail />
-                  <a href="mailto:dattecode@gmail.com" className="aCont">
+                  <IconMail/>
+                  <p href="mailto:dattecode@gmail.com" className="aCont">
                     contactame
-                  </a>
-                </motion.div>
+                  </p>
+                </motion.a>
               </motion.div>
               <motion.div
                 className="barDeco"

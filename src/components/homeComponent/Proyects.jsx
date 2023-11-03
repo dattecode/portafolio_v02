@@ -11,28 +11,25 @@ const Proyects = ({ animates }) => {
     {
       name: "Web Del Clima",
       image: cmp,
-      description: "web para ver la descripcion del clima",
+      git: "https://github.com/dattecode/weather_v02",
       url: "https://graceful-meringue-f189ce.netlify.app",
     },
     {
       name: "Panel De Usuarios",
       image: uspp,
-      description:
-        "pagina web para hacer una descripcion de un panel de usuario",
+      git: "https://github.com/dattecode/userPanelV02",
       url: "https://lucky-maamoul-58474b.netlify.app",
     },
     {
       name: "Rick And Morty Web",
       image: rymp,
-      description:
-        "pagina web de rick an morty para ver los residentes de los universo de RyM",
+      git: "https://github.com/dattecode/RYM_V02",
       url: "https://glistening-figolla-8faff5.netlify.app",
     },
     {
       name: "Pokedex",
       image: pkdp,
-      description:
-        "pagina web para ver la descripcion de tus pokemones favoritos ",
+      git: "https://github.com/dattecode/pokedex_v02",
       url: "https://rad-cucurucho-74df0c.netlify.app",
     },
   ];
@@ -40,23 +37,28 @@ const Proyects = ({ animates }) => {
   return (
     <section className="proyectsSc">
       {proyects.map((proyect, i) => (
-        <motion.a
+        <motion.div
           key={i}
           className="proyectContainer"
           variants={animates}
           initial="hidden"
           whileInView="visible"
           whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
-          target="_blank"
-          href={proyect.url}
           viewport={{ once: true, amount: 0.5 }}
         >
           <img src={proyect.image} className="imgPro" />
           <div className="proyectDesCont">
             <h2 className="tPro">{proyect.name}</h2>
-            <p className="pPro">{proyect.description}</p>
+            <div className="targetProy">
+              <a href={proyect.url} target="_blank">
+                Ir a Web
+              </a>
+              <a href={proyect.git} target="_blank">
+                Ir a Git
+              </a>
+            </div>
           </div>
-        </motion.a>
+        </motion.div>
       ))}
     </section>
   );

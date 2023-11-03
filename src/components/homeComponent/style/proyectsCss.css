@@ -30,4 +30,11 @@
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
+  width: 80%;
+}
+
+.targetProy{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
 }
